@@ -1,0 +1,22 @@
+#服务器
+server:
+  port: 8888
+
+
+spring:
+  #数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mybatis_cyy?useUnicode=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis配置
+mybatis:
+  typeAliasesPackage: com.cyy.vo
+  mapperLocations: classpath:dao/*.xml
+  configLocation: classpath:/mybatis-config.xml
+
+#  configuration:
+#    map-underscore-to-camel-case: true

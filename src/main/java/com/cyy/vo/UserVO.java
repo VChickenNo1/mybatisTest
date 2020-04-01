@@ -1,13 +1,14 @@
 package com.cyy.vo;
 
 import lombok.Data;
+import lombok.ToString;
 
-import java.io.Serializable;
 
 @Data
-public class UserVO implements Serializable {
+@ToString
+public class UserVO {
 
-    private  Integer id;
+    private Integer id;
     private String username;
     private String birthday;
     private String sex;
